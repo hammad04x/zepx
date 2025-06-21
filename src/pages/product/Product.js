@@ -17,7 +17,7 @@ function Product() {
 
     const fetchProducts = async () => {
         try {
-            const response = await fetch(`${port}/getproducts`);
+            const response = await fetch(`${port}/product/getproducts`);
             const data = await response.json();
             setProducts(data);
             setFilteredProducts(data); // Initially set all products as filtered
